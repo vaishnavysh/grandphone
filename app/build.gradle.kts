@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.grandphone"
-    compileSdk = 34
+    compileSdk = 35 // Updated to match library requirements
 
     defaultConfig {
         applicationId = "com.example.grandphone"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 35 // Updated to match compileSdkVersion
         versionCode = 1
         versionName = "1.0"
 
@@ -50,7 +50,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -61,6 +60,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.gridlayout)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.appcompat)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
